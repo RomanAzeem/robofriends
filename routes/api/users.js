@@ -64,8 +64,6 @@ router.post(
           res.send({ token: token });
         }
       );
-
-      //return the jsonweb token
     } catch (err) {
       console.error(err.message);
       res.status(500).json('Server Error');

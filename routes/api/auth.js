@@ -20,6 +20,11 @@ router.get('/', auth, async (req, res) => {
     res.status(500).json('Server Error');
   }
 });
+
+//@route  POST api/auth
+//@desc   Test route
+//@access Public
+
 router.post(
   '/',
   [
