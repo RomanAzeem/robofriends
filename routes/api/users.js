@@ -61,7 +61,7 @@ router.post(
         },
         (err, token) => {
           if (err) throw err;
-          res.json(token);
+          res.send({ token: token });
         }
       );
 
