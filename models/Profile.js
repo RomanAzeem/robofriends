@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const ProfileSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'user'
   },
   compnay: {
     type: String
@@ -11,7 +11,7 @@ const ProfileSchema = new mongoose.Schema({
   website: {
     type: String
   },
-  localtion: {
+  location: {
     type: String
   },
   status: {
@@ -53,7 +53,7 @@ const ProfileSchema = new mongoose.Schema({
         default: false
       },
       description: {
-        type: description
+        type: String
       }
     }
   ],

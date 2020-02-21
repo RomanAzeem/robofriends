@@ -22,7 +22,7 @@ router.get('/', auth, async (req, res) => {
 });
 
 //@route  POST api/auth
-//@desc   Test route
+//@desc   Authenticate Valid User
 //@access Public
 
 router.post(
